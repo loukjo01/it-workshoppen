@@ -1,0 +1,324 @@
+body {
+  display: flex; /* Bruger Flexbox til layout */
+  flex-direction: column; /* Indstiller hovedaksens retning til lodret */
+  align-items: center; /* Centrerer elementerne vandret */
+  justify-content: space-between; /* Placerer elementerne med lige mellemrum mellem dem */
+  min-height: 100vh; /* Sørger for, at siden altid er mindst 100% af visningens højde */
+  margin: 0; /* Fjerner standardmarginer */
+  background-color: #f0f0f0; /* Baggrundsfarve for hele siden */
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /*skrifttype */
+}
+
+/* Logo */
+a.home {
+  display: block; /* Gør linket til et blok-element */
+  text-align: center; /* Centrerer teksten vandret */
+}
+
+a.home img {
+  width: 50px; /* Justerer bredden af logoet */
+  height: auto; /* Bevarer proportionerne og justerer automatisk højden */
+}
+
+/* Header-stil */
+header {
+  background-color: #1b3253; /* Baggrundsfarve for header */
+  color: white; /* Tekstfarve i header */
+  text-align: center; /* Centrerer teksten vandret */
+  width: 100%; /* Gør header 100% bred */
+}
+
+/* Navigation */
+nav {
+  display: flex; /* Bruger Flexbox til navigation */
+  justify-content: center; /* Centrerer navigationen vandret */
+  font-size: 20px; /* Indstiller skriftstørrelsen */
+}
+
+nav a {
+  color: white; /* Tekstfarve for navigationselementer */
+  text-decoration: none; /* Fjerner understregning */
+  padding: 10px; /* Tilføjer indvendig polstring */
+  font-weight: bold; /* Gør teksten fed */
+}
+
+nav a:hover {
+  color: #ff9900; /* Ændrer tekstfarven ved hover */
+}
+
+ul {
+  list-style-type: none; /* Fjerner punktopstillingstype */
+  padding: 0; /* Fjerner standardpadding */
+  font-size: 20px; 
+}
+
+h3 {
+  margin: 0;
+  padding: 5px;
+}
+
+/* Stil for overskriftsniveau 4 */
+h4 {
+  padding-bottom: 20px;
+  margin: 0; /* Fjerner margin */
+  text-align: center; /* Venstrestiller teksten */
+}
+
+/* Stil for billeder for at sikre maksimal bredde og automatisk højdejustering */
+img {
+  max-width: 100%; /* Sørger for, at billedet aldrig er bredere end dets forælder */
+  height: auto; /* Bevarer billedets proportioner og justerer automatisk højden */
+  align-items: center; /* Centrerer billedet vandret */
+}
+
+/*
+.column p {
+  padding: 8px; 
+  margin: 0px; 
+}
+/*
+
+/* Yderligere stil til informationstekst */
+.info-text {
+  padding-left: 15px; /* Indvendig polstring til venstre */
+  margin-top: 5px;
+  line-height: 1.5; /* Kontrollerer linjeafstand */
+  text-align: left;
+  padding-top: 5px;
+}
+
+/* Blokstil til at skabe et nyt linjeelement for hvert span-element */
+.block {
+  display: block; /* Gør hvert span-element til et blok, der starter på en ny linje */
+  margin-bottom: 5px; /* Margin mellem blokkene */
+  width: 100%; /* Tilpas bredden til 100% af kolonnen */
+}
+
+/* Center-container og center-content til midterjustering */
+.center-container {
+  text-align: center; /* Centrerer teksten vandret */
+  flex: 1; /* Får containeren til at udvide sig og fylde tilgængelig plads */
+}
+
+dl{
+  color: #fff;
+  
+  text-align: left;
+  margin-top: 3px;
+}
+
+dt{
+  padding-left: 20px;
+  
+}
+
+dd{
+  color: #fff;
+  padding-right: 10px;
+}
+
+
+
+.center-content {
+  display: flex; /* Bruger Flexbox til midterjustering */
+  flex-direction: column; /* Stabler indholdet lodret */
+  align-items: center; /* Centrerer elementerne vandret */
+  background-color: #fff; /* Baggrundsfarve for indholdet */
+  padding: 10px; /* Tilføjer indvendig polstring */
+  border-radius: 4px; /* Runder hjørnerne af indholdet */
+  max-width: 1200px; /* Sætter en maksimal bredde for indholdet */
+}
+
+.center-content h1 {
+  margin-bottom: 1px; /* Justerer bundmargenen af overskriften */
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+}
+
+.center-content h2 {
+  margin-top: 5px; /* Justerer topmargenen af underskriften */
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Specifik skrifttype for underskriften */
+  font-size: 18px; /* Indstiller skriftstørrelsen for underskriften */
+}
+
+/* Stil for billeder i en kolonne */
+.column img {
+  max-width: 100%; /* Sørger for, at billedet aldrig er bredere end dets forælder */
+  height: auto; /* Bevarer billedets proportioner og justerer automatisk højden */
+}
+
+/* Stil for overskrifter i en kolonne med hvid baggrund */
+.column h3.heading-dark {
+  color: black; 
+  text-align: center;
+  padding-top: 20px; /* indvendig polstring */
+  margin-bottom: 3px; 
+  margin-top: 5px;
+}
+
+/* Stil for overskrifter i en kolonne med mørk baggrund */
+.column h3.heading-white {
+  color: white; /* evt. orange for variation? #ff9900 */
+  margin-bottom: 3px; /* Margin under overskriften */
+  padding-top: 20px; /* indvendig polstring */
+  text-align: center;
+  margin-top: 5px;
+  font-family: 'Open Sans', sans-serif;
+  
+}
+
+.button {
+  font-weight: bold;
+  display: inline-block; /* Gør linket til et blok-element med indvendig polstring */
+  padding: 10px; /*indvendig polstring */
+  text-decoration: none;
+  color: black !important; 
+  background-color: rgb(236, 234, 234);
+  border-radius: 5px; 
+  margin: 20px; /* Ydre margen link */
+}
+
+.button:hover {
+  background-color: rgb(236, 234, 234); /* Baggrundsfarve ved hover-effekt */
+  transition: background-color 0.2s ease-in; 
+  opacity: 0.6;
+  transition: opacity 0.2s ease-in; 
+}
+
+/* Kolonnecontainer og individuelle kolonner */
+.columns {
+  display: flex; /* Bruger Flexbox til kolonnecontaineren */
+  flex-direction: column; /* Stabler kolonnerne lodret */
+  align-items: center; /* Centrerer kolonnecontaineren vandret */
+}
+
+.column {
+  flex: 1; /* Får kolonnerne til at fylde tilgængelig plads */
+  margin: 5px; /* Ydre margen omkring hver kolonne */
+  position: relative; /* Gør position relativ for absolut positionering i kolonnerne */
+  overflow: hidden; /* Skjuler indholdet, der er større end kolonnen */
+  max-width: 1200px; /* Sætter en maksimal bredde for hver kolonne */
+}
+
+.column:nth-child(1) p,
+.column:nth-child(1) a {
+  color: white; /* Tekstfarve for elementer i den første kolonne */
+}
+
+.column:nth-child(1) .special-image {
+  width: 100%; /* Fylder 100% af kolonnens bredde */
+  height: 100%; /* Fylder 100% af kolonnens højde */
+  object-fit: cover; /* Skalerer billedet, så det dækker hele området */
+  position: absolute; /* Positionerer billedet relativt til kolonnen */
+  top: 0; /* Placerer billedet øverst i kolonnen */
+  left: 0; /* Placerer billedet til venstre i kolonnen */
+  z-index: -1; /* Sætter stakindeks for at placere billedet bag indholdet */
+}
+
+/* Specifikke stilarter for den anden kolonne */
+.column:nth-child(2) {
+  display: inline-block; /* Gør kolonnen til en inline-blok */
+  text-decoration: none; /* Fjerner understregning */
+  color: black; /* Tekstfarve for indholdet i den anden kolonne */
+  background-color: white; /* Baggrundsfarve for indholdet i den anden kolonne */
+}
+
+/* Specifikke stilarter for den tredje kolonne */
+.column:nth-child(3) {
+  display: inline-block; /* Gør kolonnen til en inline-blok */
+  color: white; /* Tekstfarve for indholdet i den tredje kolonne */
+}
+
+.column:nth-child(3) .special-image {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  z-index: -1; 
+}
+
+/* Specifik stil for den fjerde kolonne */
+.column:nth-child(4) {
+  background-color: white; /* Baggrundsfarve for indholdet i den fjerde kolonne */
+}
+
+/* Specifikke stilarter for den femte kolonne */
+.column:nth-child(5) {
+  color: white; /* Tekstfarve for indholdet i den femte kolonne */
+}
+
+.column:nth-child(5) .special-image {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  z-index: -1; 
+}
+
+/* Footer-stil */
+footer {
+  background-color: #1b3253; /* Baggrundsfarve for footer */
+  color: white; /* Tekstfarve i footer */
+  text-align: center; /* Centrerer teksten vandret */
+  padding: 10px 0; /* Tilføjer indvendig polstring til top og bund af footer */
+  padding-top: 20px; /* Tilføjer ekstra indvendig polstring til toppen af footer */
+  width: 100%; /* Gør footer 100% bred */
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.social-icon {
+  margin: 10px; /* Juster margener efter behov */
+}
+
+.social-icon img {
+  width: 30px; /* Juster størrelsen af ikonerne efter behov */
+  height: auto;
+}
+
+.social-icon span {
+  font-size: 14px;
+  display: block; /* Gør span til en blok for at skifte til næste linje på små skærme */
+  margin-top: 5px; /* Margin over teksten for at adskille fra ikonen */
+}
+
+@media (max-width: 800px) {
+  /* Styles for screens smaller than 800px (e.g., mobile devices) */
+  .column {
+    width: 100%;
+  }
+
+  .column img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+ /* ekstra small 600px / min-width 600px large phone*/
+@media (max-width: 600px) {
+  /* Media query for skærme, der er 700px eller mindre */
+  .social-icon img {
+    width: 35px; /* Reducer størrelsen af ikonerne på små skærme */
+  }
+
+  .social-icon span {
+    font-size: 12px; /* Reducer skriftstørrelsen på små skærme */
+  }
+}
+
+@media (min-width: 800px) {
+  img[src="image/stefan.jpg"]
+   {
+    max-width: 50%; /* Juster bredden af billedet til 50% på store skærme */
+  }
+  img[src="image/info-grafic.png"] {
+    max-width: 70%; /* Juster bredden af info-grafic.png til 70% på store skærme */
+  }
+}
